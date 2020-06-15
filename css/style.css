@@ -34,15 +34,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
-    url('../fonts/fontawesome-webfont.woff') format('woff');
-  font-display: swap;
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -89,9 +80,25 @@ ul {
   margin: 0 auto;
 }
 
-.header {
-  margin-bottom: 71px;
+.title {
+  margin-left: 45px;
+  color: #333;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
 }
+
+.input {
+  display: block;
+  padding-left: 21px;
+  margin-bottom: 23px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: none;
+  line-height: 32px;
+}
+
+    /* header */
 
 .header-container {
   display: flex;
@@ -113,16 +120,11 @@ ul {
   margin-left: 25px;
 }
 
-.arrow{
-  font-family: 'FontAwesome';
-  color: #cc9933;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
-}
-
 .account {
+  background: url('../img/arrow_lk.png') no-repeat left top 8px;
+  padding-left: 20px;
   margin-left: auto;
+  margin-right: 12px;
   font-family: 'Muller';
   color: #cc9933;
   font-size: 16px;
@@ -161,7 +163,7 @@ ul {
 .search-button {
   position: absolute;
   top: 8px;
-  right: 10px;
+  right: 15px;
   width: 30px;
   height: 30px;
   background-image: url('../img/search.svg');
@@ -174,39 +176,35 @@ ul {
 }
 
 .nav-item {
-  margin-right: 50px;
+  margin-right: 47px;
 }
 .nav-item a {
   color: #333333;
   line-height: 32px;
 }
 
+    /* Бронь */
+
 .section-one {
   display: flex;
+  margin: 73px 0 23px 0;
+}
+
+.title-reservation {
+  margin-bottom: 23px;
+}
+
+.title-offer {
+  margin-bottom: 23px;
 }
 
 .reservation, .special-offer {
-  min-width: 50%;
-}
-
-.title {
-  margin: 70px 0 23px 45px;
-  color: #333;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 32px;
+  min-width: 49%;
 }
 
 .reservation-input {
-  display: block;
   min-width: 518px;
   height: 70px;
-  padding-left: 21px;
-  margin-bottom: 24px;
-  border-radius: 12px;
-  background-color: #ffffff;
-  border: none;
-  line-height: 32px;
 }
 
 .button-send {
@@ -229,6 +227,8 @@ ul {
   line-height: 32px;
 }
 
+    /* Спецпредложение */
+
 .offer {
   position: relative;
 }
@@ -238,12 +238,12 @@ ul {
   color: #ffffff;
   font-size: 66px;
   line-height: 58px;
-  margin-bottom: 43px;
+  margin-bottom: 30px;
 }
 
 .offer-text {
   position: absolute;
-  bottom: 35px;
+  bottom: 30px;
   left: 40px;
 }
 
@@ -255,17 +255,22 @@ ul {
 }
 
 .more {
+  background: url('../img/arrow.png') no-repeat right;
+  padding-right: 20px;
   margin-left: 43px;
   color: #ffcc66;
   font-size: 16px;
   line-height: 32px;
 }
 
-.more-arrow {
-  font-family: 'FontAwesome';
-  font-size: 20px;
-  vertical-align: middle;
-  color: #cc9933;
+    /* О нас */
+
+.about-us {
+  margin-top: 70px;
+}
+
+.title-about {
+  margin-bottom: 15px;
 }
 
 .about-us-text {
@@ -275,8 +280,14 @@ ul {
   line-height: 32px;
 }
 
+    /* Услуги */
+
 .services {
-  margin-top: 66px;
+  margin-top: 63px;
+}
+
+.title-services {
+  margin-bottom: 20px;
 }
 
 .services-list {
@@ -297,10 +308,12 @@ ul {
 }
 
 .service-img {
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .service-title {
+  background: url('../img/arrow.png') no-repeat right;
+  padding-right: 20px;
   display: inline;
   padding-left: 45px;
   color: #cc9933;
@@ -309,19 +322,23 @@ ul {
   line-height: 32px;
 }
 
-.title-arrow {
-  font-family: 'FontAwesome';
-  font-size: 20px;
-  color: #cc9933;
-}
-
 .service-text {
-  margin-top: 15px;
-  padding: 0 45px 40px;
+  margin: 0;
+  padding: 0 45px 30px;
   color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+}
+
+    /* Преимущества */
+
+.advantages {
+  margin-top: 50px;
+}
+
+.title-advantages {
+  margin-bottom: 23px;
 }
 
 .advantage-list {
@@ -332,7 +349,7 @@ ul {
 .advantage {
   margin-right: 23px;
   margin-bottom: 24px;
-  padding: 44px;
+  padding: 44px 44px 30px 44px;
   max-width: 275px;
   border-radius: 12px;
   background-color: #fff;
@@ -345,6 +362,22 @@ ul {
 .advantage-img {
   width: 63px;
   height: 59px;
+}
+
+.advantage-text {
+  margin-bottom: 0;
+  margin-top: 10px;
+  line-height: 32px;
+}
+
+    /* Размещение */
+
+.accommodation {
+  margin-top: 50px;
+}
+
+.title-accommodation {
+  margin-bottom: 23px;
 }
 
 .hotels-list {
@@ -365,7 +398,13 @@ ul {
 }
 
 .hotel-text {
-  padding: 36px 44px 55px;
+  padding: 28px 44px 40px;
+}
+
+.hotel-price-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .from {
@@ -382,6 +421,14 @@ ul {
 
 .night {
   margin-right: 33px;
+}
+
+.name-hotel {
+  margin-top: 5px;
+}
+
+.rating {
+  margin-right: 2px;
 }
 
 .country {
@@ -414,10 +461,220 @@ ul {
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+  background: url('../img/arrow-white.png') no-repeat right;
+  padding-right: 15px;
 }
 
 .arrow-options {
   font-family: 'FontAwesome';
   font-size: 20px;
   color: #fff;
+}
+
+    /* Контакты */
+
+.contact-section {
+  display: flex;
+}
+
+.contacts {
+  margin-top: 42px;
+}
+
+.contacts-title {
+  margin-bottom: 25px;
+}
+
+.contact-list {
+  padding: 46px;
+  min-width: 472px;;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.contact:first-child {
+  padding-top: 0;
+}
+
+.contact-heading {
+  color: #666666;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.contact-info {
+  width: 70%;
+  max-width: 230px;
+}
+
+.contact-address {
+  display: inline;
+  color: #333333;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.contact-tel {
+  display: flex;
+  flex-direction: column;
+  color: #cc9933;
+  line-height: 24px;
+}
+
+.contact-email {
+  line-height: 26px;
+  color: #cc9933;
+}
+
+.email-info {
+  color: #999999;
+}
+
+.schedule {
+  color: #333333;
+  line-height: 24px;
+}
+
+.route-btn {
+  margin-top: 44px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  border: 1px solid #cc9933;
+  color: #cc9933;
+  background-color: transparent;
+}
+
+    /* Напишите нам */
+
+.write-us {
+  max-width: 698px;
+  margin: 0 0 82px 180px;
+}
+
+.write-us-title {
+  margin: 175px 0 40px 35px;
+}
+
+.input-write-us {
+  min-width: 340px;
+  height: 70px;
+}
+
+.textarea-write-us {
+  min-width: 340px;
+  height: 110px;
+}
+
+.send-btn {
+  padding: 27px 128px;
+  border-radius: 12px;
+  border: none;
+  background-color: #cc9933;
+  color: #ffffff;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 22px;
+  margin-bottom: 52px;
+  padding: 40px 52px 60px 52px;
+  border-radius: 12px;
+  background: url(../img/sun.png) no-repeat bottom right 180px;
+  background-color: #333333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-info {
+  max-width: 300px;
+}
+
+.footer-info-text {
+  display: block;
+  margin-bottom: 32px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.footer-info-link {
+  color: #cc9933;
+}
+
+.footer-contacts {
+  margin-left: 120px;
+}
+
+.footer-address {
+  color: #fff;
+  line-height: 32px;
+  margin-bottom: 25px;
+  font-style: normal;
+}
+
+.footer-contact-tel {
+  margin-bottom: 25px;
+}
+
+.footer-contact-email {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.tripadvisor {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 21px;
+  background: url(../img/tripadvisor.svg) no-repeat center;
+  opacity: 0.5;
+}
+
+.twitter {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 21px;
+  background: url(../img/twitter.svg) no-repeat center;
+  opacity: 0.5;
+}
+
+.facebook {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 21px;
+  background: url(../img/facebook.svg) no-repeat center;
+  opacity: 0.5;
+}
+
+.vk {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 21px;
+  background: url(../img/social.svg) no-repeat center;
+  opacity: 0.5;
+}
+
+.google-plus {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 21px;
+  background: url(../img/google-plus-social-logotype.svg) no-repeat center;
+  opacity: 0.5;
 }
