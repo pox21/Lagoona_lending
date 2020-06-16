@@ -98,6 +98,13 @@ ul {
   line-height: 32px;
 }
 
+.btn {
+  border-radius: 12px;
+  border: 1px solid #cc9933;
+  color: #cc9933;
+  background-color: transparent;
+}
+
     /* header */
 
 .header-container {
@@ -437,12 +444,7 @@ ul {
 }
 
 .numbers-btn {
-  border-radius: 12px;
-  border: 1px solid #cc9933;
-  color: #cc9933;
-  font-size: 16px;
   padding: 13px 20px;
-  background-color: transparent;
 }
 
 .all-options-img {
@@ -513,18 +515,18 @@ ul {
 .contact-info {
   width: 70%;
   max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .contact-address {
-  display: inline;
   color: #333333;
   line-height: 24px;
   font-style: normal;
 }
 
 .contact-tel {
-  display: flex;
-  flex-direction: column;
   color: #cc9933;
   line-height: 24px;
 }
@@ -546,10 +548,6 @@ ul {
 .route-btn {
   margin-top: 44px;
   padding: 25px 30px;
-  border-radius: 12px;
-  border: 1px solid #cc9933;
-  color: #cc9933;
-  background-color: transparent;
 }
 
     /* Напишите нам */
@@ -571,6 +569,7 @@ ul {
 .textarea-write-us {
   min-width: 340px;
   height: 110px;
+  resize: none;
 }
 
 .send-btn {
@@ -612,8 +611,14 @@ ul {
   color: #cc9933;
 }
 
-.footer-contacts {
+.footer-contacts__list {
   margin-left: 120px;
+}
+
+.footer-contact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .footer-address {
@@ -627,54 +632,40 @@ ul {
   margin-bottom: 25px;
 }
 
-.footer-contact-email {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.footer-social {
+.footer-social__list {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-.tripadvisor {
+.social-link {
+  display: block;
   width: 25px;
   height: 25px;
   margin-bottom: 21px;
-  background: url(../img/tripadvisor.svg) no-repeat center;
   opacity: 0.5;
+}
+
+.social-link:hover {
+  opacity: 1;
+}
+
+.tripadvisor {
+  background: url(../img/tripadvisor.svg) no-repeat center;
 }
 
 .twitter {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 21px;
   background: url(../img/twitter.svg) no-repeat center;
-  opacity: 0.5;
 }
 
 .facebook {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 21px;
   background: url(../img/facebook.svg) no-repeat center;
-  opacity: 0.5;
 }
 
 .vk {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 21px;
   background: url(../img/social.svg) no-repeat center;
-  opacity: 0.5;
 }
 
 .google-plus {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 21px;
   background: url(../img/google-plus-social-logotype.svg) no-repeat center;
-  opacity: 0.5;
 }
