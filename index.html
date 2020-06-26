@@ -15,17 +15,17 @@
       <div class="header-container">
         <img src="img/Logo.png" alt="logo" class="logo">
         <a href="tel:+74953225448" class="tel">+7 495 322 54 48</a>
-        <a href="#" class="account">Личный кабинет</a>
+        <a href="#" class="account after-link">Личный кабинет</a>
       </div><!-- /.header-container -->
 
       <div class="navigation">
         <ul class="nav">
-          <li class="nav-item"><a href="#about">О нас</a></li>
-          <li class="nav-item"><a href="#serv">Услуги</a></li>
-          <li class="nav-item"><a href="#advant">Преимущества</a></li>
-          <li class="nav-item"><a href="#accom">Размещение</a></li>
-          <li class="nav-item"><a href="#">Блог</a></li>
-          <li class="nav-item"><a href="#cont">Контакты</a></li>
+          <li class="nav-item"><a href="#about" class="nav-item__link after-link">О нас</a></li>
+          <li class="nav-item"><a href="#serv" class="nav-item__link after-link">Услуги</a></li>
+          <li class="nav-item"><a href="#advant" class="nav-item__link after-link">Преимущества</a></li>
+          <li class="nav-item"><a href="#accom" class="nav-item__link after-link">Размещение</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link after-link">Блог</a></li>
+          <li class="nav-item"><a href="#cont" class="nav-item__link after-link">Контакты</a></li>
         </ul>
 
         <form class="search">
@@ -48,7 +48,7 @@
             <input required type="date" name="Check In Date" class="input reservation-input">
             <input required type="number" name="Number of nights" class="input reservation-input" placeholder="Количество ночей">
             <input required type="number" name="Number of guests" class="input reservation-input" placeholder="Количество гостей">
-            <button type="submit" class="button-send">Найти номер</button>
+            <button type="submit" class="button-send send-reserv">Найти номер</button>
             <span class="amount">9 756 </span>
             <span class="form-text">предложений доступно</span>
           </form>
@@ -78,25 +78,25 @@
         <ul class="services-list">
           <li class="service">
             <img src="img/service.png" alt="обслуживание" class="service-img">
-            <a href="#" class="service-title">Эксклюзивное обслуживание</a>
+            <a href="#" class="service-link after-link">Эксклюзивное обслуживание</a>
             <p class="service-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
           </li>
 
           <li class="service">
             <img src="img/rent.png" alt="Аренда" class="service-img">
-            <a href="#" class="service-title">Аренда банкетных залов</a>
+            <a href="#" class="service-link after-link">Аренда банкетных залов</a>
             <p class="service-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
           </li>
 
           <li class="service">
             <img src="img/pool.png" alt="Сауны" class="service-img">
-            <a href="#" class="service-title">Сауны, бассейны, бани, фитнес-залы</a>
+            <a href="#" class="service-link after-link">Сауны, бассейны, бани, фитнес-залы</a>
             <p class="service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
           </li>
 
           <li class="service">
             <img src="img/avto.png" alt="стоянки" class="service-img">
-            <a href="#" class="service-title">Охраняемые автомобильные стоянки</a>
+            <a href="#" class="service-link after-link">Охраняемые автомобильные стоянки</a>
             <p class="service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
           </li>
         </ul>
@@ -362,7 +362,7 @@
 
           <li class="hotel all-options">
             <img src="img/other.png" alt="" class="all-options-img">
-            <a href="#" class="all-options-link">Посмотреть все варианты</a>
+            <a href="#" class="all-options-link" aria-label="Посмотреть все варианты"></a>
           </li>
         </ul>
       </section>
@@ -385,8 +385,8 @@
                 <span class="contact-heading">Телефоны</span>
 
                 <div class="contact-info">
-                  <a href="tel:+74995356434" class="contact-tel">+7 (499) 535-64-34</a>
-                  <a href="tel:+74950050544" class="contact-tel">+7 (495) 005-05-44</a>
+                  <a href="tel:+74995356434" class="contact-tel after-link">+7 (499) 535-64-34</a>
+                  <a href="tel:+74950050544" class="contact-tel after-link">+7 (495) 005-05-44</a>
                 </div>
               </li>
 
@@ -394,10 +394,10 @@
                 <span class="contact-heading">E-mail</span>
 
                 <div class="contact-info">
-                  <a href="mailto:lg.oona@mail.ru" class="contact-email">lg.oona@mail.ru</a>
+                  <a href="mailto:lg.oona@mail.ru" class="contact-email after-link">lg.oona@mail.ru</a>
                   <span class="email-info">по вопросам бронирования</span>
 
-                  <a href="mailto:hotels.ln@mail.ru" class="contact-email">hotels.ln@mail.ru</a>
+                  <a href="mailto:hotels.ln@mail.ru" class="contact-email after-link">hotels.ln@mail.ru</a>
                   <span class="email-info">по вопросам сотрудничества</span>
                 </div>
 
@@ -422,7 +422,7 @@
             <input type="text" name="name" placeholder="Имя" class="input input-write-us">
             <input type="tel" name="tel" placeholder="+7" class="input input-write-us">
             <textarea name="message" placeholder="Сообщение" class="input textarea-write-us"></textarea>
-            <button type="submit" class="send-btn">Отправить</button>
+            <button type="submit" class="button-send write-us-btn">Отправить</button>
           </form>
         </section>
       </div><!-- /.contact-section -->
@@ -434,20 +434,20 @@
       <div class="footer-info">
         <span class="footer-info-text">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»</span>
         <span class="footer-info-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</span>
-        <a href="#" class="footer-info-link">Политика конфиденциальности</a>
+        <a href="#" class="footer-info-link after-link">Политика конфиденциальности</a>
       </div><!-- /.footer-info -->
 
       <ul class="footer-contacts__list">
         <li class="footer-contact__item"><address class="footer-address">11710, улица Юности, дом 5 строение 4, офис 2</address></li>
 
         <li class="footer-contact__item footer-contact-tel">
-          <a href="tel:+74995356434" class="contact-tel">+7 (499) 535-64-34</a>
-          <a href="tel:+74950050544" class="contact-tel">+7 (495) 005-05-44</a>
+          <a href="tel:+74995356434" class="contact-tel after-link">+7 (499) 535-64-34</a>
+          <a href="tel:+74950050544" class="contact-tel after-link">+7 (495) 005-05-44</a>
         </li>
 
         <li class="footer-contact__item footer-contact-email">
-          <a href="mailto:lg.oona@mail.ru" class="contact-email">lg.oona@mail.ru</a>
-          <a href="mailto:hotels.ln@mail.ru" class="contact-email">hotels.ln@mail.ru</a>
+          <a href="mailto:lg.oona@mail.ru" class="contact-email after-link">lg.oona@mail.ru</a>
+          <a href="mailto:hotels.ln@mail.ru" class="contact-email after-link">hotels.ln@mail.ru</a>
         </li>
       </ul><!-- /.footer-contacts -->
 

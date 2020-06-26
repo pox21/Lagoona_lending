@@ -102,7 +102,40 @@ ul {
   border-radius: 12px;
   border: 1px solid #cc9933;
   color: #cc9933;
+  cursor: pointer;
   background-color: transparent;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.button-send {
+  border-radius: 12px;
+  background-color: #cc9933;
+  color: #ffffff;
+  border: #cc9933;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.button-send:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.after-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cc9933;
+  transform: scaleX(0);
+  transition: transform 0.2s;
 }
 
     /* header */
@@ -125,9 +158,15 @@ ul {
   font-weight: 800;
   line-height: 32px;
   margin-left: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+.tel:hover {
+  color: #cc9933;
 }
 
 .account {
+  position: relative;
   background: url('../img/arrow_lk.png') no-repeat left top 8px;
   padding-left: 20px;
   margin-left: auto;
@@ -137,6 +176,10 @@ ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.account:hover:after {
+  transform: scaleX(1);
 }
 
 .navigation {
@@ -185,9 +228,20 @@ ul {
 .nav-item {
   margin-right: 47px;
 }
-.nav-item a {
+
+.nav-item__link {
+  position: relative;
   color: #333333;
   line-height: 32px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item__link:hover {
+  color: #cc9933;
+}
+
+.nav-item__link:hover:after {
+  transform: scaleX(1);
 }
 
     /* Бронь */
@@ -214,13 +268,8 @@ ul {
   height: 70px;
 }
 
-.button-send {
-  border-radius: 12px;
-  background-color: #cc9933;
+.send-reserv {
   padding: 27px 30px;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
 }
 
 .amount {
@@ -268,7 +317,14 @@ ul {
   color: #ffcc66;
   font-size: 16px;
   line-height: 32px;
+  transition: font-size 0.3s;
 }
+
+.more:hover {
+  font-size: 18px;
+  transition: font-size 0.3s;
+}
+
 
     /* О нас */
 
@@ -318,15 +374,20 @@ ul {
   margin-bottom: 30px;
 }
 
-.service-title {
+.service-link {
+  position: relative;
   background: url('../img/arrow.png') no-repeat right;
   padding-right: 20px;
   display: inline;
-  padding-left: 45px;
+  margin-left: 45px;
   color: #cc9933;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.service-link:hover:after {
+  transform: scaleX(1);
 }
 
 .service-text {
@@ -453,18 +514,39 @@ ul {
 
 .all-options {
   position: relative;
+  transition: transform 0.3s;
 }
 
 .all-options-link {
-  position: absolute;
-  bottom: 52px;
-  left: 39px;
   color: #fff;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+  transition: transform 0.3s;
+}
+
+.all-options-link::after {
+  content: 'Посмотреть все варианты';
   background: url('../img/arrow-white.png') no-repeat right;
   padding-right: 15px;
+  position: absolute;
+  bottom: 52px;
+  left: 39px;
+
+}
+
+.all-options-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.all-options:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s;
 }
 
 .arrow-options {
@@ -527,13 +609,23 @@ ul {
 }
 
 .contact-tel {
+  position: relative;
   color: #cc9933;
   line-height: 24px;
 }
 
+.contact-tel:hover:after {
+  transform: scaleX(1);
+}
+
 .contact-email {
+  position: relative;
   line-height: 26px;
   color: #cc9933;
+}
+
+.contact-email:hover:after {
+  transform: scaleX(1);
 }
 
 .email-info {
@@ -572,12 +664,8 @@ ul {
   resize: none;
 }
 
-.send-btn {
+.write-us-btn {
   padding: 27px 128px;
-  border-radius: 12px;
-  border: none;
-  background-color: #cc9933;
-  color: #ffffff;
 }
 
 /* footer */
@@ -608,7 +696,12 @@ ul {
 }
 
 .footer-info-link {
+  position: relative;
   color: #cc9933;
+}
+
+.footer-info-link:hover:after {
+  transform: scaleX(1);
 }
 
 .footer-contacts__list {
